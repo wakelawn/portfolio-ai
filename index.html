@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="sPACE portfolio website featuring clean modern space-inspired design, projects, and contact details."
+    />
+    <title>sPACE Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="intro-active">
+    <section id="intro-gate" class="intro-gate" aria-label="Galaxy intro">
+      <canvas id="intro-galaxy-canvas" class="intro-galaxy-canvas" aria-hidden="true"></canvas>
+      <button id="intro-enter" class="intro-enter" type="button">Enter Galaxy</button>
+    </section>
+
+    <div class="site-shell">
+      <canvas id="galaxy-canvas" class="galaxy-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a href="#home" class="brand">sPACE</a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">
+        Menu
+      </button>
+    </header>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="home">
+      <section class="hero reveal">
+        <p class="tag">sPACE // Deep-Space Product Lab</p>
+        <h1>
+          Building mission-ready digital systems for a
+          <span>space-native future</span>.
+        </h1>
+        <p class="hero-copy">
+          I design and engineer cinematic interfaces, telemetry-first products,
+          and launch-grade brand experiences under the sPACE vision.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Work With Me</a>
+        </div>
+        <ul class="hero-stats" aria-label="sPACE stats">
+          <li>
+            <span class="stat-number">18+</span>
+            <span class="stat-label">Orbital Deployments</span>
+          </li>
+          <li>
+            <span class="stat-number">6</span>
+            <span class="stat-label">Mission Partners</span>
+          </li>
+          <li>
+            <span class="stat-number">99%</span>
+            <span class="stat-label">Mission Confidence</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="about panel reveal">
+        <h2>About sPACE</h2>
+        <p>
+          sPACE blends product strategy, design systems, and high-performance
+          frontend engineering. I focus on clean architecture, confident visuals,
+          and memorable storytelling for ambitious teams.
+        </p>
+      </section>
+
+      <section id="projects" class="projects reveal">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <p>Selected work where concept meets launch velocity.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card panel">
+            <p class="project-kicker">Mission Control UI</p>
+            <h3>Orbital Ops Dashboard</h3>
+            <p>
+              Real-time telemetry interface with mission timelines, anomaly alerts,
+              and dark-light adaptive data visualization.
+            </p>
+            <a href="#contact" class="project-link">Request case study</a>
+          </article>
+
+          <article class="project-card panel">
+            <p class="project-kicker">AI Product</p>
+            <h3>Starlens Insight Engine</h3>
+            <p>
+              Predictive intelligence layer that turns operational data into
+              strategic recommendations for space logistics teams.
+            </p>
+            <a href="#contact" class="project-link">Discuss build</a>
+          </article>
+
+          <article class="project-card panel">
+            <p class="project-kicker">Brand + Web</p>
+            <h3>Launchpad Studio Site</h3>
+            <p>
+              Conversion-focused website with kinetic visuals, editorial typography,
+              and high-performance implementation.
+            </p>
+            <a href="#contact" class="project-link">See approach</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills reveal">
+        <div class="section-head">
+          <h2>Core Skills</h2>
+          <p>Capabilities across the full product lifecycle.</p>
+        </div>
+        <div class="chip-wrap">
+          <span class="chip">Product Strategy</span>
+          <span class="chip">UI/UX Design</span>
+          <span class="chip">Frontend Engineering</span>
+          <span class="chip">Design Systems</span>
+          <span class="chip">Data Storytelling</span>
+          <span class="chip">Performance Optimization</span>
+          <span class="chip">Accessibility</span>
+          <span class="chip">Brand Direction</span>
+        </div>
+      </section>
+
+      <section id="contact" class="contact panel reveal">
+        <h2>Let’s Build With sPACE</h2>
+        <p>
+          Ready to launch a modern product or portfolio presence? Let’s connect.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:hello@space.studio">hello@space.studio</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> sPACE. Built for the next frontier.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
